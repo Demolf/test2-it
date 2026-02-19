@@ -3,9 +3,11 @@ const mysql = require("mysql2");
 // Подключение к MySQL
 const db = mysql.createConnection({
   host: process.env.DB_HOST,
+  port: process.env.DB_PORT, // 3306
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
-  // database: "chat_db", // Убрано, чтобы подключиться к MySQL без выбора базы
+  // database: "test", // Убрано, чтобы подключиться к MySQL без выбора базы
+  charset: "utf8mb4",
 });
 
 // Проверка подключения к БД
@@ -54,3 +56,4 @@ db.query(createDbQuery, (err, result) => {
 });
 
 module.exports = db;
+
