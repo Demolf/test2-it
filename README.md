@@ -27,7 +27,7 @@
 
 ## Установка и запуск
 
-1. Убедитесь, что у вас уста��овлены [Node.js](https://nodejs.org/) и [MySQL](https://www.mysql.com/).
+1. Убедитесь, что у вас устаовлены [Node.js](https://nodejs.org/) и [MySQL](https://www.mysql.com/).
 2. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/Demolf/test-it.git
