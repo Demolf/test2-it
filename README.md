@@ -41,8 +41,9 @@
    ```env
    PORT=3000
    DB_HOST=localhost
+   DB_PORT=3306
    DB_USER=root
-   DB_PASSWORD=root
+   DB_PASSWORD=
    ```
    Или измените значения прямо в `db/config.js`.
 5. Запустите сервер:
