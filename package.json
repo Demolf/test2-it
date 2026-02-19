@@ -1,0 +1,28 @@
+{
+  "name": "name",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Demolf/test-it.git"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "fs": "0.0.1-security",
+    "mysql2": "^3.17.2",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

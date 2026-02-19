@@ -1,0 +1,67 @@
+/* public/css/style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background-color: gray;
+}
+
+.disex {
+  display: flex;
+}
+
+.mright{
+  margin-right: 15px;
+}
+
+.mbottom{
+  margin-bottom: 15px;
+}
+
+header {
+  background-color: darkmagenta;
+  padding: 15px;
+}
+
+footer {
+  background-color: darkgreen;
+  padding: 15px;
+}
+
+.left, .right {
+  padding: 5px;
+  height: 500px;
+}
+
+.left {
+  width: 800px;
+  background-color: darkred;
+}
+
+.right {
+  width: 200px;
+  background-color: darkorange;
+}
+
+.left .list {
+  border: 1px solid #ccc;
+}
+
+.left .list .name {
+  border-right: 1px solid #ccc;
+  padding: 3px 5px;
+}
+
+.left .list .content {
+  padding: 3px 5px;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="/js/javascript.js"></script>
+
+    <script>
+      // Передаём данные из шаблона в JS
+      window.initialData = {
+        name: "<%= name %>",
+        title: "<%= title %>",
+      };
+    </script>
+  </head>
+  <body>
+    <header>header</header>
+    <div class="disex">
+      <div class="left">
+        <div class="news" id="news">
+          
+          <% data.get.forEach(d => {%>
+            <div class="list">
+              <div class="disex">
+                <div class="name">
+                  <%= d.name %>
+                </div>
+                <div class="content">
+                  <%= d.content %>
+                </div>
+              </div>
+            </div>
+            <%}) %>
+        </div>
+        <div class="send">
+          <form id="form">
+            <div class="disex">
+            <input type="text" id="name">
+            <input type="text" id="content">
+            <input type="submit" value="senf">
+          </div>
+          </form>
+        </div>
+      </div>
+      <div class="right">right</div>
+    </div>
+    <footer>footer</footer>
+  </body>
+</html>
